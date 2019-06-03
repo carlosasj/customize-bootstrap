@@ -1,0 +1,106 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="assets/city_logo.svg" height="30" class="d-inline-block align-top" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fa fa-globe-americas"></i><br>
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-file-invoice"></i><br>
+          Reports
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-user-cog"></i><br>
+          Manage
+        </a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <i class="fa fa-sign-out-alt"></i><br>
+      Logout
+    </span>
+  </div>
+</nav>
+<main class="container">
+  <h3>Add User</h3>
+
+  <form>
+    <h4>User Info</h4>
+    <div class="form-group">
+      <label for="name">Name*</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="identification">Identification number*</label>
+      <input type="text" class="form-control" id="identification" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="country">Country</label>
+        <select name="country" class="form-control" id="country">
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Brazil" selected>Brazil</option>
+          <option value="UK">UK</option>
+          <option value="India">India</option>
+          <option value="Italy">Italy</option>
+        </select>
+      </div>
+      <div class="form-group col-md-8">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" id="location">
+      </div>
+    </div>
+
+    <h4>User Manager Info</h4>
+    <div class="form-group">
+      <label for="email">E-mail*</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="email-confirmation">E-mail confirmation*</label>
+      <input type="email" class="form-control" id="email-confirmation" required>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="ddi">Phone number</label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-2">
+        <select name="ddi" class="form-control" id="ddi">
+          <option value="+1">+1</option>
+          <option value="+10">+10</option>
+          <option value="+11">+11</option>
+          <option value="+42">+42</option>
+          <option value="+55" selected>+55</option>
+          <option value="+67">+67</option>
+        </select>
+      </div>
+      <div class="form-group col-10">
+        <input type="text" class="form-control" id="phone">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-4 offset-8">
+        <button type="submit" class="btn btn-primary btn-block">Next</button>
+      </div>
+    </div>
+  </form>
+</main>
+<footer class="footer py-3">
+  <div class="container d-flex">
+    <img src="assets/city_logo.svg" height="50" class="d-inline-block align-top ml-auto">
+  </div>
+</footer>

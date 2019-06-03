@@ -1,0 +1,8 @@
+{
+  "files.exclude": {
+    "**/node_modules/[^b]*": true,
+    "**/node_modules/b[^o]*": true,
+    "**/node_modules/bo[^o]*": true,
+    "**/node_modules/bootstrap/{js,dist,LICENSE,package.json,*.md}": true,
+  }
+}
