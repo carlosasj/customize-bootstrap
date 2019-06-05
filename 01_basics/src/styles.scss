@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "variables";
+
+body {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: $base-font-size;
+}
+
+h2 {
+  font-size: 0.75*$base-font-size;
+}
+
+.success {
+  color: #068511;
+}
+
+.error {
+  color: #d10f0f;
+}
+
+.success,
+.error {
+  font-weight: bold;
+}
+
+button {
+  background-color: #004f78;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: 2*$default-padding;
+  padding-right: 2*$default-padding;
+  color: #fff;
+}
+
+input {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: 2*$default-padding;
+  padding-right: 2*$default-padding;
+}
